@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Koszyk</title>
+    <link rel="stylesheet" href="style_koszyk.css">
 </head>
 <body>
-    <p>koszyk</p>
+
+    <header class="header">
+        <h1>Twój koszyk</h1>
+        <a href="menu.html" class="back">← Powrót</a>
+    </header>
+
+    <main class="container">
+
+        <div id="cart-items">
+            <!-- JS wstawi produkty -->
+        </div>
+
+        <div class="summary">
+            <h2>Suma: <span id="total-price">0.00</span> zł</h2>
+            <button class="order-btn" onclick="goToOrder()">Przejdź do zamówienia</button>
+        </div>
+
+    </main>
+
+    <script src="koszyk.js"></script>
 </body>
 </html>
