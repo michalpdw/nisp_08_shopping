@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zamówienie</title>
+    <link rel="stylesheet" href="style_zamowienie.css">
 </head>
 <body>
-    <p>zamowienie</p>
+
+    <header>
+        <h1>Podsumowanie zamówienia</h1>
+
+        <div class="header-controls">
+            <a href="koszyk.html" class="back-btn">← Powrót</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- PODSUMOWANIE PRODUKTÓW -->
+        <section class="summary-box">
+            <h2>Produkty</h2>
+            <div id="order-items"></div>
+
+            <h3 class="total">
+                Suma: <span id="total-price">0.00</span> zł
+            </h3>
+        </section>
+
+        <!-- FORMULARZ -->
+        <section class="form-box">
+            <h2>Dane do zamówienia</h2>
+
+            <form id="order-form">
+                <input type="text" placeholder="Imię i nazwisko" required>
+                <input type="text" placeholder="Adres" required>
+                <input type="email" placeholder="Email" required>
+
+                <button type="submit">Potwierdź zamówienie</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="zamowienie.js"></script>
 </body>
 </html>
