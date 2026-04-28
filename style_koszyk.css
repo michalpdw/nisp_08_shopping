@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.back {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* MAIN */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* LISTA PRODUKTÓW */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* POJEDYNCZY PRODUKT */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.item-quantity {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+/* PRZYCISK USUWANIA */
+.remove-btn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* PODSUMOWANIE */
+.summary {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.summary h2 {
+    margin-bottom: 15px;
+}
+
+/* PRZYCISK ZAMÓWIENIA */
+.order-btn {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.order-btn:hover {
+    background-color: #27ae60;
+}
